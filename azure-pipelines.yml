@@ -13,6 +13,6 @@ steps:
 - task: CmdLine@2
   inputs:
     script: |
-      javac skill.java
+      javac AddTwoNumbers.java
       
-      java skill
+      java AddTwoNumbers
