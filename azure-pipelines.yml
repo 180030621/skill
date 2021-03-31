@@ -12,10 +12,7 @@ pool:
 steps:
 - task: CmdLine@2
   inputs:
-    script: 'java skill'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
+    script: |
+      javac skill.java
+      
+      java skill
